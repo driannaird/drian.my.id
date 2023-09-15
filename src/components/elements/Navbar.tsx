@@ -10,7 +10,7 @@ const Navbar = () => {
   const { toggle, setToggle } = useGlobalContext();
 
   const controlNavbar = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 52) {
       setShow(true);
     } else {
       setShow(false);
