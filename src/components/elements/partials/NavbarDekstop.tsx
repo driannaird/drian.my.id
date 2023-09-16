@@ -26,7 +26,7 @@ const NavbarDekstop = () => {
             <Link
               href={link.path}
               key={index}
-              className={`p-3 flex items-center gap-3 transition-all duration-300 ease-in-out  cursor-pointer rounded-lg ${
+              className={`p-3 flex items-center gap-3 transition-all duration-300 ease-in-out cursor-pointer rounded-lg ${
                 pathname === link.path
                   ? "bg-slate-me"
                   : "hover:bg-bg-partial hover:scale-105"
