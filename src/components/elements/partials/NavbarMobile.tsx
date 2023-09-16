@@ -23,13 +23,13 @@ const NavbarMobile = () => {
           <ul className="text-sm flex flex-col gap-3 mt-3 md:text-base">
             <li
               onClick={() => Navigate("/")}
-              className="bg-bg-partial p-3 rounded-lg flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
+              className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image src="/menus/home.svg" alt="home" width={25} height={25} />
               <span>Home</span>
             </li>
             <li
               onClick={() => Navigate("/about")}
-              className="bg-bg-partial p-3 rounded-lg flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
+              className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image
                 src="/menus/about.svg"
                 alt="about"
@@ -38,7 +38,7 @@ const NavbarMobile = () => {
               />
               <span>About</span>
             </li>
-            <li className="bg-bg-partial p-3 rounded-lg flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
+            <li className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image
                 src="/menus/project.svg"
                 alt="project"
@@ -47,7 +47,7 @@ const NavbarMobile = () => {
               />
               <span>Project</span>
             </li>
-            <li className="bg-bg-partial p-3 rounded-lg flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
+            <li className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image
                 src="/menus/contact.svg"
                 alt="contact"
@@ -56,7 +56,7 @@ const NavbarMobile = () => {
               />
               <span>Contact</span>
             </li>
-            <li className="bg-bg-partial p-3 rounded-lg flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
+            <li className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-border-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image
                 src="/menus/rocket.svg"
                 alt="rocket"

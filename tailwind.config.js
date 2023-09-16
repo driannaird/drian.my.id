@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         "black-me": "#010409",
         "slate-me": "#201F1F",
-        "bg-partial": "#3B3B3B",
+        "bg-partial": "#111111",
         "slate-gradient-one": "#292828",
         "border-me": "#535353",
         "unggu-is": "#6512B9",

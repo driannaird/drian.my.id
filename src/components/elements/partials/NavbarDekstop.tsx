@@ -21,12 +21,12 @@ const NavbarDekstop = () => {
         initial={{ y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}>
-        <ul className="text-sm flex flex-col gap-3 mt-3 lg:text-xl">
+        <ul className="text-sm flex flex-col gap-1 mt-3 lg:text-xl">
           {links.map((link, index) => (
             <Link
               href={link.path}
               key={index}
-              className={`p-3 flex items-center gap-3 transition-all duration-300 ease-in-out  cursor-pointer rounded-lg ${
+              className={`p-3 flex items-center gap-3 transition-all duration-300 ease-in-out  cursor-pointer rounded-md ${
                 pathname === link.path
                   ? "bg-bg-partial"
                   : "hover:bg-bg-partial hover:scale-105"
