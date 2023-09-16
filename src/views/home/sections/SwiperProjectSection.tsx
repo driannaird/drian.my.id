@@ -43,7 +43,7 @@ const SwiperProjectSection = () => {
         spaceBetween={15}>
         <SwiperSlide className="rounded-md overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dhnjuuy2e/image/upload/v1694835790/projects/lompace.vercel.app__Responsive_Project_camo5b.png"
+            src="https://res.cloudinary.com/dhnjuuy2e/image/upload/v1694836039/projects/nextjs.org__Responsive_Project_szljtp.png"
             width="1000"
             height="1000"
             alt=""
@@ -101,7 +101,7 @@ const SwiperProjectSection = () => {
         </SwiperSlide>
         <SwiperSlide className="rounded-md overflow-hidden">
           <Image
-            src="https://res.cloudinary.com/dhnjuuy2e/image/upload/v1694835964/projects/localhost_3000__Responsive_Project_q9sepp.png"
+            src="https://res.cloudinary.com/dhnjuuy2e/image/upload/v1694836039/projects/nextjs.org__Responsive_Project_szljtp.png"
             width="1000"
             height="1000"
             alt=""
