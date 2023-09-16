@@ -14,7 +14,7 @@ const HomeView = () => {
   return (
     <div className="lg:bg-slate-me lg:border lg:border-border-me lg:rounded-lg">
       <div className="hidden mb-5 text-center bg-gradient-to-r from-unggu-is to-pink-is rounded-t-lg lg:block">
-        <p className="text-white text-lg py-1 lg:text-xl">
+        <p className="text-white text-lg py-1 md:text-lg">
           Hi, welcome to my portfolio
         </p>
       </div>
@@ -92,14 +92,14 @@ const HomeView = () => {
               #front-end #18years-old
             </span>
           </div>
-          <h3 className="text-gray-300 lg:text-xl">
+          <h3 className="text-gray-300 md:text-lg">
             Hai saya Riski Drian Pratama, seorang Web Programmer full time di
             rumah sakit. Saya memiliki minat yang tinggi terhadap front end
             developer. Saat ini saya sedang mendalami React JS dan Tailwind CSS.
           </h3>
         </div>
         <div>
-          <button className="bg-gradient-to-r from-unggu-is to-pink-is w-full py-2 rounded-lg border border-border-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:w-auto md:px-4 lg:text-xl">
+          <button className="bg-gradient-to-r from-unggu-is to-pink-is w-full py-2 rounded-lg border border-border-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:w-auto md:px-4 md:text-lg">
             <Image src="/icons/unduh.svg" width={25} height={25} alt="unduh" />
             Unduh CV
           </button>
@@ -123,29 +123,30 @@ const HomeView = () => {
           </Link>
         </div>
         <Swiper
-          slidesPerView={1}
+          className="relative"
+          slidesPerView={1.1}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 2.1,
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 2.1,
               spaceBetween: 20,
             },
-            1024: {
-              slidesPerView: 3,
+            1400: {
+              slidesPerView: 2.1,
               spaceBetween: 20,
             },
           }}
           spaceBetween={15}>
           <SwiperSlide className="rounded-lg overflow-hidden ">
-            <div className="bg-gradient-to-br from-unggu-is to-pink-is h-48"></div>
+            <div className="bg-gradient-to-br from-unggu-is to-pink-is h-56"></div>
             <div className="bg-bg-partial p-4 md:py-8 md:px-5">
-              <h2 className="text-lg mb-2 font-bold md:text-xl lg:text-2xl">
+              <h2 className="text-lg mb-2 font-bold md:text-xl">
                 Lompace Travel
               </h2>
-              <p className="text-gray-300 md:text-lg lg:text-xl">
+              <p className="text-gray-300 md:text-lg">
                 Personal landing page built with Next.js 13 App Router,
                 TypeScript and Tailwind CSS.
               </p>
@@ -163,12 +164,12 @@ const HomeView = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="rounded-lg overflow-hidden">
-            <div className="bg-gradient-to-br from-unggu-is to-pink-is h-48"></div>
+            <div className="bg-gradient-to-br from-unggu-is to-pink-is h-56"></div>
             <div className="bg-bg-partial p-4 md:py-8 md:px-5">
-              <h2 className="text-lg mb-2 font-bold md:text-xl lg:text-2xl">
+              <h2 className="text-lg mb-2 font-bold md:text-xl">
                 Lompace Travel
               </h2>
-              <p className="text-gray-300 md:text-lg lg:text-xl">
+              <p className="text-gray-300 md:text-lg">
                 Personal landing page built with Next.js 13 App Router,
                 TypeScript and Tailwind CSS.
               </p>
@@ -186,12 +187,12 @@ const HomeView = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="rounded-lg overflow-hidden">
-            <div className="bg-gradient-to-br from-unggu-is to-pink-is h-48"></div>
+            <div className="bg-gradient-to-br from-unggu-is to-pink-is h-56"></div>
             <div className="bg-bg-partial p-4 md:py-8 md:px-5">
-              <h2 className="text-lg mb-2 font-bold md:text-xl lg:text-2xl">
+              <h2 className="text-lg mb-2 font-bold md:text-xl">
                 Lompace Travel
               </h2>
-              <p className="text-gray-300 md:text-lg lg:text-xl">
+              <p className="text-gray-300 md:text-lg">
                 Personal landing page built with Next.js 13 App Router,
                 TypeScript and Tailwind CSS.
               </p>
@@ -213,17 +214,15 @@ const HomeView = () => {
       <section className="bg-bg-partial p-8 mt-3 rounded-lg lg:m-5">
         <div className="flex gap-1 items-center text-lg mb-3 md:gap-2">
           <Image src="/icons/work.svg" width={25} height={25} alt="work" />
-          <h2 className="font-bold md:text-xl lg:text-2xl">
-            Mari berkerja sama!
-          </h2>
+          <h2 className="font-bold md:text-lg">Mari berkerja sama!</h2>
         </div>
-        <p className="text-gray-300 md:text-lg lg:text-xl">
+        <p className="text-gray-300 md:text-lg">
           Meskipun saya memiliki kesibukan sebagai Web Programmer Full Time
           tetapi saya sangat bersedia untuk menggunakan waktu luang saya untuk
           berkerja sama dengan siapapun.
         </p>
         <div className="mt-4">
-          <button className="bg-gradient-to-r from-unggu-is to-pink-is py-2 px-4 rounded-lg border border-border-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 lg:text-xl">
+          <button className="bg-gradient-to-r from-unggu-is to-pink-is py-2 px-4 rounded-lg border border-border-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:text-lg">
             Hubungi Saya
           </button>
         </div>
