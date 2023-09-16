@@ -3,7 +3,7 @@ import Navbar from "../elements/Navbar";
 const PageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="p-3 lg:px-16 lg:py-8">
-      <div className="container mx-auto rounded-md border border-border-me lg:grid lg:grid-cols-5 lg:border-none lg:gap-2">
+      <div className="container mx-auto rounded-md border border-slate-me lg:grid lg:grid-cols-5 lg:border-none lg:gap-2">
         <div className="mb-3 text-center bg-gradient-to-r from-unggu-is to-pink-is rounded-t-lg lg:hidden">
           <p className="text-white text-sm py-1 md:text-base">
             Hi, welcome to my portfolio

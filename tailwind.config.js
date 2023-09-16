@@ -18,7 +18,6 @@ module.exports = {
         "slate-me": "#201F1F",
         "bg-partial": "#111111",
         "slate-gradient-one": "#292828",
-        "border-me": "#535353",
         "unggu-is": "#6512B9",
         "pink-is": "#D719AD",
         "text-color": "#8F8F8F",

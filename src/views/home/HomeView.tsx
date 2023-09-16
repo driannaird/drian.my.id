@@ -13,7 +13,7 @@ const HomeView = () => {
   }, []);
 
   return (
-    <div className="lg:border lg:border-border-me lg:rounded-md">
+    <div className="lg:border lg:border-slate-me lg:rounded-md">
       <WelcomeSection />
       <MeSection />
       <SwiperProjectSection />

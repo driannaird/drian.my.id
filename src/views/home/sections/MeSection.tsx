@@ -4,8 +4,8 @@ const MeSection = () => {
   return (
     <section
       data-aos="fade-up"
-      className="bg-bg-partial border border-border-me rounded-md p-3 flex flex-col justify-center md:p-8 lg:mx-5 lg:border-none">
-      <div className="border-b w-full border-border-me pb-3 my-3 md:pb-5 lg:flex lg:items-center lg:justify-between ">
+      className="bg-bg-partial border border-slate-me rounded-md p-3 flex flex-col justify-center md:p-8 lg:mx-5 lg:border-none">
+      <div className="border-b w-full border-slate-me pb-3 my-3 md:pb-5 lg:flex lg:items-center lg:justify-between ">
         <div className="flex flex-col items-center md:items-start md:flex-row md:gap-4">
           <Image
             className="rounded-full lg:hidden"
@@ -25,13 +25,13 @@ const MeSection = () => {
         </div>
         <div className="flex justify-evenly mt-4 md:justify-start md:gap-6">
           <a
-            className="rounded-md border border-border-me hover:opacity-80"
+            className="rounded-md border border-slate-me hover:opacity-80"
             href="https://www.instagram.com/driannaird/"
             target="_blank">
             <Image src="/icons/instagram.svg" width="40" height="40" alt="ig" />
           </a>
           <a
-            className="rounded-md border border-border-me hover:opacity-80"
+            className="rounded-md border border-slate-me hover:opacity-80"
             href="https://www.youtube.com/@driannaird"
             target="_blank">
             <Image
@@ -42,7 +42,7 @@ const MeSection = () => {
             />
           </a>
           <a
-            className="rounded-md border border-border-me hover:opacity-80"
+            className="rounded-md border border-slate-me hover:opacity-80"
             href="https://www.tiktok.com/@driannaird"
             target="_blank">
             <Image
@@ -53,7 +53,7 @@ const MeSection = () => {
             />
           </a>
           <a
-            className="rounded-md border border-border-me hover:opacity-80"
+            className="rounded-md border border-slate-me hover:opacity-80"
             href="https://github.com/Drian-key"
             target="_blank">
             <Image
@@ -65,7 +65,7 @@ const MeSection = () => {
           </a>
         </div>
       </div>
-      <div className="text-center text-base border-b w-full border-border-me pb-3 mb-3 md:text-lg md:text-start">
+      <div className="text-center text-base border-b w-full border-slate-me pb-3 mb-3 md:text-lg md:text-start">
         <div className="mb-3">
           <span className="bg-gradient-to-r from-purple-500 to-pink-is text-transparent bg-clip-text font-bold lg:text-xl">
             #front-end #18years-old
@@ -78,7 +78,7 @@ const MeSection = () => {
         </h3>
       </div>
       <div>
-        <button className="bg-gradient-to-r from-unggu-is to-pink-is w-full py-2 rounded-md border border-border-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:w-auto md:px-4 md:text-lg">
+        <button className="bg-gradient-to-r from-unggu-is to-pink-is w-full py-2 rounded-md border border-slate-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:w-auto md:px-4 md:text-lg">
           <Image src="/icons/unduh.svg" width={25} height={25} alt="unduh" />
           Unduh CV
         </button>

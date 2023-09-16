@@ -8,8 +8,8 @@ const SwiperProjectSection = () => {
   return (
     <section
       data-aos="fade-up"
-      className="border border-border-me p-3 mt-3 rounded-md relative md:p-8 lg:m-5">
-      <div className="flex justify-between border-b border-border-me pb-3 mb-3 md:pb-8 md:mb-8">
+      className="border border-slate-me p-3 mt-3 rounded-md relative md:p-8 lg:m-5">
+      <div className="flex justify-between border-b border-slate-me pb-3 mb-3 md:pb-8 md:mb-8">
         <h3 className="md:text-lg lg:text-2xl">Project terbaru</h3>
         <Link
           className="flex items-center gap-1 bg-gradient-to-r from-purple-500 to-pink-is text-transparent font-bold text-sm bg-clip-text hover:opacity-80 md:text-lg"
