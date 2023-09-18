@@ -19,7 +19,7 @@ const MeSection = () => {
               Front-end Developer
             </h4>
             <h1 className="text-2xl font-bold xl:text-4xl">
-              Hi i`am Riski Drian Pratama
+              Hai Saya Riski Drian Pratama
             </h1>
           </div>
         </div>
@@ -68,19 +68,18 @@ const MeSection = () => {
       <div className="text-center text-base border-b w-full border-slate-me pb-3 mb-3 md:text-lg md:text-start">
         <div className="mb-3">
           <span className="bg-gradient-to-r from-purple-500 to-pink-is text-transparent bg-clip-text font-bold lg:text-xl">
-            #front-end #18years-old
+            #front-end #18tahun
           </span>
         </div>
         <h3 className="text-gray-300 md:text-lg">
-          Hai saya Riski Drian Pratama, seorang Web Programmer full time di
-          rumah sakit. Saya memiliki minat yang tinggi terhadap front end
-          developer. Saat ini saya sedang mendalami React JS dan Tailwind CSS.
+          Saya memiliki minat yang tinggi terhadap front end developer. Saat ini
+          saya sedang mendalami React JS dan Tailwind CSS.
         </h3>
       </div>
       <div>
         <button className="bg-gradient-to-r from-unggu-is to-pink-is w-full py-2 rounded-md border border-slate-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80 md:w-auto md:px-4 md:text-lg">
           <Image src="/icons/unduh.svg" width={25} height={25} alt="unduh" />
-          Unduh CV
+          Unduh CV (segera)
         </button>
       </div>
     </section>
