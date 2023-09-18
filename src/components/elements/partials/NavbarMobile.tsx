@@ -24,7 +24,13 @@ const NavbarMobile = () => {
             <li
               onClick={() => Navigate("/")}
               className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
-              <Image src="/menus/home.svg" alt="home" width={25} height={25} />
+              <Image
+                src="/menus/home.svg"
+                alt="home"
+                width={25}
+                height={25}
+                className="w-auto h-auto"
+              />
               <span>Home</span>
             </li>
             <li
@@ -35,6 +41,7 @@ const NavbarMobile = () => {
                 alt="about"
                 width={25}
                 height={25}
+                className="w-auto h-auto"
               />
               <span>About</span>
             </li>
@@ -44,6 +51,7 @@ const NavbarMobile = () => {
                 alt="project"
                 width={25}
                 height={25}
+                className="w-auto h-auto"
               />
               <span>Project</span>
             </li>
@@ -53,6 +61,7 @@ const NavbarMobile = () => {
                 alt="contact"
                 width={25}
                 height={25}
+                className="w-auto h-auto"
               />
               <span>Contact</span>
             </li>
@@ -62,6 +71,7 @@ const NavbarMobile = () => {
                 alt="rocket"
                 width={25}
                 height={25}
+                className="w-auto h-auto"
               />
               <span>Rocket</span>
             </li>

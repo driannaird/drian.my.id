@@ -48,7 +48,13 @@ const Navbar = () => {
           <button
             onClick={() => setToggle(!toggle)}
             className="bg-bg-partial p-2 rounded-md border  border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer lg:hidden">
-            <Image src="/hamburger.svg" alt="ham" width={25} height={25} />
+            <Image
+              src="/hamburger.svg"
+              alt="ham"
+              width={25}
+              height={25}
+              className="w-auto h-auto"
+            />
           </button>
         </div>
         <div className="lg:hidden">

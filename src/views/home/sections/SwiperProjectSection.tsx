@@ -1,10 +1,16 @@
 import Image from "next/image";
-
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
+import axios from "axios";
+import { ProjectsType } from "@/types/ProjectsTypes";
 
-const SwiperProjectSection = () => {
+type TechType = {
+  slug: string;
+};
+
+const SwiperProjectSection = ({ projects }: { projects: ProjectsType }) => {
   return (
     <section
       data-aos="fade-up"
@@ -23,7 +29,6 @@ const SwiperProjectSection = () => {
           />
         </Link>
       </div>
-
       <Swiper
         slidesPerView={1.1}
         breakpoints={{
@@ -41,92 +46,41 @@ const SwiperProjectSection = () => {
           },
         }}
         spaceBetween={15}>
-        <SwiperSlide className="rounded-md overflow-hidden">
-          <Image
-            src="https://res.cloudinary.com/dhnjuuy2e/image/upload/v1694836039/projects/nextjs.org__Responsive_Project_szljtp.png"
-            width="1000"
-            height="1000"
-            alt=""
-          />
+        {projects.map((project: ProjectsType, index: number) => (
+          <SwiperSlide
+            key={index}
+            className="rounded-md overflow-hidden group cursor-pointer">
+            <Link href={project.url} target="_blank">
+              <Image
+                src={project.image}
+                width="1000"
+                height="1000"
+                alt=""
+                className="transition-all duration-300 ease-in-out group-hover:scale-105"
+              />
 
-          <div className="bg-bg-partial p-4 md:py-8 md:px-5">
-            <h2 className="text-lg mb-2 font-bold md:text-xl">
-              Lompace Travel
-            </h2>
-            <p className="text-gray-300 md:text-lg">
-              Personal landing page built with Next.js 13 App Router, TypeScript
-              and Tailwind CSS.
-            </p>
-            <div className="mt-4 flex gap-2">
-              <Image src="/icons/ts.svg" width={25} height={25} alt="ts" />
-              <Image src="/icons/react.svg" width={25} height={25} alt="ts" />
-              <Image src="/icons/next.svg" width={25} height={25} alt="ts" />
-              <Image
-                src="/icons/tailwind.svg"
-                width={25}
-                height={25}
-                alt="ts"
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md overflow-hidden">
-          <Image
-            src="https://res.cloudinary.com/dhnjuuy2e/image/upload/v1694835790/projects/lompace.vercel.app__Responsive_Project_camo5b.png"
-            width="1000"
-            height="1000"
-            alt=""
-          />
-
-          <div className="bg-bg-partial p-4 md:py-8 md:px-5">
-            <h2 className="text-lg mb-2 font-bold md:text-xl">
-              Lompace Travel
-            </h2>
-            <p className="text-gray-300 md:text-lg">
-              Personal landing page built with Next.js 13 App Router, TypeScript
-              and Tailwind CSS.
-            </p>
-            <div className="mt-4 flex gap-2">
-              <Image src="/icons/ts.svg" width={25} height={25} alt="ts" />
-              <Image src="/icons/react.svg" width={25} height={25} alt="ts" />
-              <Image src="/icons/next.svg" width={25} height={25} alt="ts" />
-              <Image
-                src="/icons/tailwind.svg"
-                width={25}
-                height={25}
-                alt="ts"
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="rounded-md overflow-hidden">
-          <Image
-            src="https://res.cloudinary.com/dhnjuuy2e/image/upload/v1694836039/projects/nextjs.org__Responsive_Project_szljtp.png"
-            width="1000"
-            height="1000"
-            alt=""
-          />
-          <div className="bg-bg-partial p-4 md:py-8 md:px-5">
-            <h2 className="text-lg mb-2 font-bold md:text-xl">
-              Lompace Travel
-            </h2>
-            <p className="text-gray-300 md:text-lg">
-              Personal landing page built with Next.js 13 App Router, TypeScript
-              and Tailwind CSS.
-            </p>
-            <div className="mt-4 flex gap-2">
-              <Image src="/icons/ts.svg" width={25} height={25} alt="ts" />
-              <Image src="/icons/react.svg" width={25} height={25} alt="ts" />
-              <Image src="/icons/next.svg" width={25} height={25} alt="ts" />
-              <Image
-                src="/icons/tailwind.svg"
-                width={25}
-                height={25}
-                alt="ts"
-              />
-            </div>
-          </div>
-        </SwiperSlide>
+              <div className="bg-bg-partial p-4 md:py-8 md:px-5 transition-all duration-300 ease-in-out group-hover:scale-105">
+                <h2 className="text-lg mb-2 font-bold md:text-xl">
+                  {project.title}
+                </h2>
+                <p className="text-gray-300 md:text-lg">
+                  {project.description}
+                </p>
+                <div className="mt-4 flex gap-2">
+                  {project.techs.map((tech: TechType, index: number) => (
+                    <Image
+                      key={index}
+                      src={`/icons/${tech.slug}.svg`}
+                      width={25}
+                      height={25}
+                      alt="ts"
+                    />
+                  ))}
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );

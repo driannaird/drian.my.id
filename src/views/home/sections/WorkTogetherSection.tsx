@@ -13,7 +13,7 @@ const WorkTogetherSection = () => {
         sama dengan siapapun.
       </p>
       <div className="mt-4">
-        <button className="bg-gradient-to-r from-unggu-is to-pink-is py-2 px-4 rounded-md border border-slate-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:text-lg">
+        <button className="hover:scale-105 bg-gradient-to-r from-unggu-is to-pink-is py-2 px-4 rounded-md border border-slate-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:text-lg">
           Hubungi Saya
         </button>
       </div>

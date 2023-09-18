@@ -1,7 +1,9 @@
 import Head from "next/head";
 import HomeView from "@/views/home/HomeView";
+import { ProjectsType } from "@/types/ProjectsTypes";
+import { axiosInstance } from "@/utils/axios/axiosInstance";
 
-export default function Home() {
+export default function Home({ projects }: { projects: ProjectsType }) {
   return (
     <>
       <Head>
@@ -11,8 +13,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HomeView />
+        <HomeView projects={projects} />
       </main>
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const response = await axiosInstance.get("/api/projects");
+  const data = response.data.data;
+
+  return {
+    props: {
+      projects: data,
+    },
+  };
 }

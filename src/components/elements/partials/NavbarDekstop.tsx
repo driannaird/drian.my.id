@@ -1,4 +1,3 @@
-import { useGlobalContext } from "@/contexts/globalContext";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -36,6 +35,7 @@ const NavbarDekstop = () => {
                 alt={link.label}
                 width={25}
                 height={25}
+                className="w-auto h-auto"
               />
               <span>{link.label}</span>
             </Link>

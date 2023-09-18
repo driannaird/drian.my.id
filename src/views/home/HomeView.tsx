@@ -1,22 +1,15 @@
-import Image from "next/image";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import MeSection from "./sections/MeSection";
 import SwiperProjectSection from "./sections/SwiperProjectSection";
 import WorkTogetherSection from "./sections/WorkTogetherSection";
 import WelcomeSection from "./sections/WelcomeSection";
+import { ProjectsType } from "@/types/ProjectsTypes";
 
-const HomeView = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
+const HomeView = ({ projects }: { projects: ProjectsType }) => {
   return (
     <div className="lg:border lg:border-slate-me lg:rounded-md">
       <WelcomeSection />
       <MeSection />
-      <SwiperProjectSection />
+      <SwiperProjectSection projects={projects} />
       <WorkTogetherSection />
     </div>
   );

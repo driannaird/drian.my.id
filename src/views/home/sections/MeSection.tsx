@@ -25,13 +25,13 @@ const MeSection = () => {
         </div>
         <div className="flex justify-evenly mt-4 md:justify-start md:gap-6">
           <a
-            className="rounded-md border border-slate-me hover:opacity-80"
+            className="rounded-md border border-slate-me transition-all duration-300 ease-in-out hover:opacity-80 hover:scale-125"
             href="https://www.instagram.com/driannaird/"
             target="_blank">
             <Image src="/icons/instagram.svg" width="40" height="40" alt="ig" />
           </a>
           <a
-            className="rounded-md border border-slate-me hover:opacity-80"
+            className="rounded-md border border-slate-me transition-all duration-300 ease-in-out hover:opacity-80 hover:scale-110"
             href="https://www.youtube.com/@driannaird"
             target="_blank">
             <Image
@@ -42,7 +42,7 @@ const MeSection = () => {
             />
           </a>
           <a
-            className="rounded-md border border-slate-me hover:opacity-80"
+            className="rounded-md border border-slate-me transition-all duration-300 ease-in-out hover:opacity-80 hover:scale-125"
             href="https://www.tiktok.com/@driannaird"
             target="_blank">
             <Image
@@ -53,7 +53,7 @@ const MeSection = () => {
             />
           </a>
           <a
-            className="rounded-md border border-slate-me hover:opacity-80"
+            className="rounded-md border border-slate-me transition-all duration-300 ease-in-out hover:scale-125 hover:opacity-80"
             href="https://github.com/Drian-key"
             target="_blank">
             <Image
@@ -78,7 +78,7 @@ const MeSection = () => {
         </h3>
       </div>
       <div>
-        <button className="bg-gradient-to-r from-unggu-is to-pink-is w-full py-2 rounded-md border border-slate-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:opacity-80 md:w-auto md:px-4 md:text-lg">
+        <button className="bg-gradient-to-r from-unggu-is to-pink-is w-full py-2 rounded-md border border-slate-me flex justify-center items-center gap-1 text-base transition-all duration-300 ease-in-out hover:scale-105 hover:opacity-80 md:w-auto md:px-4 md:text-lg">
           <Image src="/icons/unduh.svg" width={25} height={25} alt="unduh" />
           Unduh CV
         </button>
