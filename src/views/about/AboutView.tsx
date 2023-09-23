@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AboutView = () => {
   return (
-    <div className="text-gray-300 min-h-[calc(100vh-3rem)] lg:border lg:border-slate-me lg:rounded-md lg:text-lg indent-8 tracking-wide leading-relaxed text-justify">
+    <div className="text-gray-300 min-h-[calc(100vh-3rem)] lg:border lg:border-slate-me lg:rounded-md lg:text-lg indent-8 lg:tracking-wide leading-relaxed text-justify">
       <section
         data-aos="fade-up"
         className="bg-bg-partial border border-slate-me rounded-md p-3 flex flex-col justify-center md:p-8 lg:m-5 lg:border-none">
