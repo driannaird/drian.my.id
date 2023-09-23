@@ -16,11 +16,11 @@ const SwiperProjectSection = ({ projects }: { projects: ProjectsType }) => {
       data-aos="fade-up"
       className="border border-slate-me p-3 mt-3 rounded-md relative md:p-8 lg:m-5">
       <div className="flex justify-between border-b border-slate-me pb-3 mb-3 md:pb-8 md:mb-8">
-        <h3 className="md:text-lg lg:text-2xl">Project terbaru</h3>
+        <h3 className="md:text-lg lg:text-2xl">New Project</h3>
         <Link
           className="flex items-center gap-1 bg-gradient-to-r from-purple-500 to-pink-is text-transparent font-bold text-sm bg-clip-text hover:opacity-80 md:text-lg hover:scale-105 transition-all duration-300 ease-in-out"
           href="/project">
-          Lihat semua project{" "}
+          See all projects
           <Image
             src="/icons/right-arrow.svg"
             width={20}
