@@ -6,7 +6,7 @@ import { ProjectsType } from "@/types/ProjectsTypes";
 
 const HomeView = ({ projects }: { projects: ProjectsType }) => {
   return (
-    <div className="lg:border lg:border-slate-me lg:rounded-md">
+    <div className="lg:border lg:border-slate-me lg:rounded-md tracking-wide leading-relaxed">
       <WelcomeSection />
       <MeSection />
       <SwiperProjectSection projects={projects} />
