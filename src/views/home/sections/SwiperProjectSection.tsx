@@ -53,8 +53,9 @@ const SwiperProjectSection = ({ projects }: { projects: ProjectsType }) => {
             <Link href={project.url} target="_blank">
               <Image
                 src={project.image}
-                width="1000"
-                height="1000"
+                width="500"
+                height="500"
+                priority
                 alt=""
                 className="transition-all duration-300 ease-in-out group-hover:scale-105"
               />
