@@ -9,7 +9,9 @@ const ContactView = () => {
         className="bg-bg-partial border border-slate-me rounded-md p-3 flex flex-col justify-center md:p-8 lg:m-5 lg:border-none">
         <h1 className="font-bold text-3xl">Contact Me</h1>
       </section>
-      <section className="border border-slate-me rounded-md p-3 flex flex-col justify-center md:p-8 mt-4 lg:m-5">
+      <section
+        data-aos="fade-up"
+        className="border border-slate-me rounded-md p-3 flex flex-col justify-center md:p-8 mt-4 lg:m-5">
         <p className="font-bold">You can contact me via:</p>
         <div className="flex flex-col gap-4 mt-2 md:flex-row">
           <Link

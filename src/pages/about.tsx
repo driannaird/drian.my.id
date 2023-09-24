@@ -1,7 +1,7 @@
 import AboutView from "@/views/about/AboutView";
 import Head from "next/head";
 
-const HeloPage = () => {
+const AboutPage = () => {
   return (
     <>
       <Head>
@@ -17,4 +17,4 @@ const HeloPage = () => {
   );
 };
 
-export default HeloPage;
+export default AboutPage;

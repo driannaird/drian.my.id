@@ -46,7 +46,7 @@ const NavbarMobile = () => {
               <span>About</span>
             </li>
             <li
-              onClick={() => Navigate("/project")}
+              onClick={() => Navigate("/projects")}
               className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image
                 src="/menus/project.svg"
