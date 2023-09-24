@@ -45,7 +45,9 @@ const NavbarMobile = () => {
               />
               <span>About</span>
             </li>
-            <li className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
+            <li
+              onClick={() => Navigate("/project")}
+              className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image
                 src="/menus/project.svg"
                 alt="project"
@@ -55,7 +57,9 @@ const NavbarMobile = () => {
               />
               <span>Project</span>
             </li>
-            <li className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
+            <li
+              onClick={() => Navigate("/contact")}
+              className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
               <Image
                 src="/menus/contact.svg"
                 alt="contact"
