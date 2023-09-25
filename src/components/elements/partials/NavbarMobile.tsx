@@ -55,7 +55,7 @@ const NavbarMobile = () => {
                 height={25}
                 className="w-auto h-auto"
               />
-              <span>Project</span>
+              <span>Projects</span>
             </li>
             <li
               onClick={() => Navigate("/contact")}
