@@ -9,7 +9,7 @@ const NavbarDekstop = () => {
   const links = [
     { path: "/", icon: "home.svg", label: "Home" },
     { path: "/abouts", icon: "about.svg", label: "About" },
-    { path: "/projects", icon: "project.svg", label: "Projects" },
+    { path: "/project", icon: "project.svg", label: "Projects" },
     { path: "/contact", icon: "contact.svg", label: "Contact" },
     { path: "/rocket", icon: "rocket.svg", label: "Rocket" },
   ];
