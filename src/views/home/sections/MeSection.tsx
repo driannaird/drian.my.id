@@ -68,7 +68,7 @@ const MeSection = () => {
       <div className="text-center text-base border-b w-full border-slate-me pb-3 mb-3 md:text-lg md:text-start">
         <div className="mb-3">
           <span className="bg-gradient-to-r from-purple-500 to-pink-is text-transparent bg-clip-text font-bold lg:text-xl">
-            #front-end #18yearsold
+            #front-end #19yearsold
           </span>
         </div>
         <h3 className="text-gray-300 md:text-lg">
