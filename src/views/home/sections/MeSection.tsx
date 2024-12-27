@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const MeSection = () => {
   return (
@@ -77,10 +78,12 @@ const MeSection = () => {
         </h3>
       </div>
       <div>
-        <button className="flex items-center justify-center w-full gap-1 py-2 text-base transition-all duration-300 ease-in-out border rounded-md bg-gradient-to-r from-unggu-is to-pink-is border-slate-me hover:scale-105 hover:opacity-80 md:w-auto md:px-4 md:text-lg">
+        <Link
+          href="/cv.pdf"
+          className="flex items-center justify-center w-full gap-1 py-2 text-base transition-all duration-300 ease-in-out border rounded-md bg-gradient-to-r from-unggu-is to-pink-is border-slate-me hover:scale-105 hover:opacity-80 md:w-auto md:px-4 md:text-lg">
           <Image src="/icons/unduh.svg" width={25} height={25} alt="unduh" />
-          Download CV (Soon)
-        </button>
+          Download CV
+        </Link>
       </div>
     </section>
   );
