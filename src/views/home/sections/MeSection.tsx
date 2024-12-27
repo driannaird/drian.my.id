@@ -17,7 +17,7 @@ const MeSection = () => {
           />
           <div className="text-center md:text-start">
             <h4 className="mt-4 text-xl font-medium text-text-color xl:text-2xl">
-              Front-end Developer
+              Web Developer
             </h4>
             <h1 className="text-2xl font-bold xl:text-4xl">
               Hi, I am Riski Drian Pratama
@@ -69,11 +69,11 @@ const MeSection = () => {
       <div className="w-full pb-3 mb-3 text-base text-center border-b border-slate-me md:text-lg md:text-start">
         <div className="mb-3">
           <span className="font-bold text-transparent bg-gradient-to-r from-purple-500 to-pink-is bg-clip-text lg:text-xl">
-            #front-end #20yearsold
+            #webdeveloper #20yearsold
           </span>
         </div>
         <h3 className="text-gray-300 md:text-lg">
-          Full time front end developer. Deep dive into JavaScript and its
+          Full time web developer. Deep dive into JavaScript and its
           environment.
         </h3>
       </div>
