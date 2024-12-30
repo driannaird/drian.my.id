@@ -69,16 +69,6 @@ const NavbarMobile = () => {
               />
               <span>Contact</span>
             </li>
-            <li className="bg-bg-partial p-3 rounded-md flex items-center gap-3 border border-slate-me transition-all duration-300 ease-in-out hover:bg-slate-me cursor-pointer">
-              <Image
-                src="/menus/rocket.svg"
-                alt="rocket"
-                width={25}
-                height={25}
-                className="w-auto h-auto"
-              />
-              <span>Rocket</span>
-            </li>
           </ul>
         </motion.div>
       ) : null}
